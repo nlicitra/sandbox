@@ -40,5 +40,5 @@ gulp.task('lib', function() {
 });
 
 gulp.task('watch', ['sass:watch', 'es6:watch']);
-
-
+gulp.task('start', ['lib', 'watch']);
+gulp.task('default', ['start']);
